@@ -2,15 +2,11 @@ package campeonato;
 
 public class Campeonato {
 	//Atributos:
-	Clube clubes = new Clube();
 	
 	
-	//Métodos:
+	
+	/*Métodos:
 	public void jogarCampeonato() {
-		
-	}
-	
-	private void jogarPartida(Clube x , Clube y) {
 		
 	}
 	
@@ -21,5 +17,5 @@ public class Campeonato {
 	public int getCampeao() {
 		
 	}
-	
+	*/
 }

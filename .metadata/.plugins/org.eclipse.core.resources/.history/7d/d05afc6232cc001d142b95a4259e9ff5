@@ -5,7 +5,7 @@ public class Campeonato {
 	Clube clubes = new Clube();
 	
 	
-	//Métodos:
+	Métodos:
 	public void jogarCampeonato() {
 		
 	}
