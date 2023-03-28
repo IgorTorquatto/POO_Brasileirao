@@ -28,7 +28,7 @@ public class Campeonato {
 			
 			for(int j = 0; j < (numero_clubes -1 ); j++) {
 				if (i == j ) continue;
-				//System.out.println("Partida de " + clubes.get(i).getNome()+ " enfrentando  " + clubes.get(j).getNome());
+				System.out.println("Time " + clubes.get(i)+ " enfrentando time " + clubes.get(j));
 				jogarPartida(clubes.get(i),clubes.get(j));
 			}
 			
@@ -58,8 +58,6 @@ public class Campeonato {
 			//Para y:
 			saldoy = pl_time2 - pl_time1;
 			y.perder(saldoy);
-			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 		
 		else if (pl_time2 > pl_time1) {
@@ -70,8 +68,6 @@ public class Campeonato {
 			//Para y:
 			saldoy = pl_time2 - pl_time1;
 			y.ganhar(saldoy);
-			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 			
 	}

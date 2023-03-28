@@ -19,6 +19,6 @@ public class Teste {
 		//Criando o campeonato:
 		Campeonato campeonato = new Campeonato(clubes);
 		
-		campeonato.jogarCampeonato();
+		
 	}
 }
