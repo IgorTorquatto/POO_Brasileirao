@@ -1,0 +1,18 @@
+package main;
+
+import java.util.ArrayList;
+import campeonato.Campeonato;
+import campeonato.Clube;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		Clube[] clubes = new Clube[20];
+		
+		for(int i = 0; i<20;i++) {
+			clubes[i] = new Clube();
+		}
+		
+		System.out.println(clubes[0]);
+	}
+}

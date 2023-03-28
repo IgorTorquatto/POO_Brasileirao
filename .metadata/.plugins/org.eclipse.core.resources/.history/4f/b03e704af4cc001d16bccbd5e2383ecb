@@ -1,0 +1,16 @@
+package main;
+
+import java.util.ArrayList;
+import campeonato.Campeonato;
+import campeonato.Clube;
+
+public class Teste {
+	public static void main(String[] args) {
+		
+		ArrayList<Clube> clubes = new ArrayList<Clube>();
+		
+		clubes.add(new Clube("cor"));
+		
+		System.out.println(clubes.size());
+	}
+}

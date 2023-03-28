@@ -8,11 +8,11 @@ public class Clube {
 		
 		
 		//Construtor:
-		/*public Clube(String nome,int pontos,int saldoGols) {
+		public Clube(String nome) {
 			this.nome = nome;
-			this.pontos = pontos;
-			this.saldoGols = saldoGols;
-		}*/
+			this.pontos = 0;
+			this.saldoGols = 0;
+		}
 		
 		//Métodos:
 		public void ganhar(int saldoGols) {
@@ -25,7 +25,11 @@ public class Clube {
 		}
 		
 		public void perder(int saldoGols) {
-			
+			this.pontos = this.pontos;
+		}
+		
+		public String getNome() {
+			return this.nome;
 		}
 	
 }

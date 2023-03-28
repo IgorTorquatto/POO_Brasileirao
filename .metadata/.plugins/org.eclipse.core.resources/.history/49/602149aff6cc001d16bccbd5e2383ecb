@@ -1,0 +1,27 @@
+package campeonato;
+
+import java.util.ArrayList;
+
+public class Campeonato {
+	
+	public ArrayList<Clube> participantes = new ArrayList<Clube>();
+	
+	
+	//Métodos:
+	public void jogarCampeonato() {
+		
+	}
+	
+	private void jogarPartida(Clube x , Clube y) {
+		
+	}
+	
+	/*public int getClassificacao() {
+		
+	}
+	
+	public int getCampeao() {
+		
+	}*/
+	
+}
