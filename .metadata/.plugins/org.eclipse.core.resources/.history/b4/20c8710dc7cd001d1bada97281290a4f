@@ -1,7 +1,6 @@
 package campeonato;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Random;
 
 public class Campeonato {
@@ -24,7 +23,6 @@ public class Campeonato {
 		
 		System.out.println("Número times: " + numero_clubes);
 		System.out.println("Número confrontos: " + qtd_confrontos);
-		System.out.println("\n Confrontos: ");
 		
 		for(int i = 0 ; i < numero_clubes ; i++) {
 			
@@ -78,26 +76,12 @@ public class Campeonato {
 			
 	}
 	
-	public String getClassificacao() {
+	/*public int getClassificacao() {
 		
-		System.out.println("\n Classificação: ");
-		
-		
-		for(int i = 0 ; i < clubes.size();i++) {
-			
-			System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
-		}
-		return "oi";
 	}
 	
-	/*public int getCampeao() {
-		for(int i = 0 ; i < clubes.size();i++) {
-			maior = clubes.get(i).getPontos();
-			if(clubes.get(i+1).getPontos() > clubes.get(i).getPontos() ) {
-				maior = clubes.get(i+1).getPontos();
-			}
-		//System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
-	
+	public int getCampeao() {
+		
 	}*/
 	
 }

@@ -2,9 +2,9 @@ package campeonato;
 
 public class Clube {
 		//Atributos:
-		 private String nome;
-		 private int pontos;
-		 private int saldoGols;
+		static private String nome;
+		static private int pontos;
+		static private int saldoGols;
 		
 		
 		//Construtor:
@@ -32,10 +32,6 @@ public class Clube {
 		
 		public String getNome() {
 			return this.nome;
-		}
-		
-		public int getPontos() {
-			return this.pontos;
 		}
 	
 }

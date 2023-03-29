@@ -33,9 +33,5 @@ public class Clube {
 		public String getNome() {
 			return this.nome;
 		}
-		
-		public int getPontos() {
-			return this.pontos;
-		}
 	
 }

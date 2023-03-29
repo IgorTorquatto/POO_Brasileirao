@@ -82,22 +82,15 @@ public class Campeonato {
 		
 		System.out.println("\n Classificação: ");
 		
-		
+	
 		for(int i = 0 ; i < clubes.size();i++) {
-			
 			System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
 		}
 		return "oi";
 	}
 	
-	/*public int getCampeao() {
-		for(int i = 0 ; i < clubes.size();i++) {
-			maior = clubes.get(i).getPontos();
-			if(clubes.get(i+1).getPontos() > clubes.get(i).getPontos() ) {
-				maior = clubes.get(i+1).getPontos();
-			}
-		//System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
-	
-	}*/
+	//public int getCampeao() {
+		
+	//}
 	
 }
