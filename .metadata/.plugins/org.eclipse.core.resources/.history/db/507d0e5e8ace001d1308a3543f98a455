@@ -26,10 +26,16 @@ public class Clube {
 		}
 		
 		public void perder(int saldoGols) {
+			this.pontos = this.pontos;
 			this.saldoGols = saldoGols;
+		}
+		
+		public String getNome() {
+			return this.nome;
 		}
 		
 		public int getPontos() {
 			return this.pontos;
 		}
+	
 }

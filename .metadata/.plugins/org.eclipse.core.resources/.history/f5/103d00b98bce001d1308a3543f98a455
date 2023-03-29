@@ -101,7 +101,7 @@ public class Campeonato {
 		*/
 		System.out.println("\n Classificação: ");
 		
-		clubes.sort(Comparator.comparing(Clube :: getPontos ).reversed());
+		clubes.sort(Comparator.comparing(Clube :: clube.).reversed());
 		for (Clube clube : clubes) {
 			System.out.printf("\n %s %d pontos \n",clube.nome,clube.pontos);
 			

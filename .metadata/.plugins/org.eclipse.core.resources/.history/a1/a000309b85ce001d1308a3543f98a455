@@ -21,7 +21,5 @@ public class Teste {
 		
 		campeonato.jogarCampeonato();
 		campeonato.getClassificacao();
-		
-		System.out.println(" \n Parabéns " + campeonato.getCampeao() + " é o time vencedor!");
 	}
 }

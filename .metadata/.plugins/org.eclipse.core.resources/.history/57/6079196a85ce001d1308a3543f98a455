@@ -2,7 +2,6 @@ package campeonato;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.Random;
 
 public class Campeonato {
@@ -50,7 +49,7 @@ public class Campeonato {
 		if (pl_time1 == pl_time2) {
 			x.empatar();
 			y.empatar();
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 		
 		else if (pl_time1 > pl_time2) {
@@ -62,7 +61,7 @@ public class Campeonato {
 			saldoy = pl_time2 - pl_time1;
 			y.perder(saldoy);
 			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 		
 		else if (pl_time2 > pl_time1) {
@@ -74,14 +73,13 @@ public class Campeonato {
 			saldoy = pl_time2 - pl_time1;
 			y.ganhar(saldoy);
 			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 			
 	}
 	
 	public String getClassificacao() {
 		
-		/* ArrayList<Integer> times_pontos = new ArrayList<Integer>();
 		System.out.println("\n Classificação: ");
 		
 		
@@ -89,43 +87,17 @@ public class Campeonato {
 			
 			System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
 		}
-		for(int i = 0; i< clubes.size();i++) {
-			times_pontos.add(clubes.get(i).pontos);
-		}
-		
-		Collections.sort(times_pontos, Collections.reverseOrder());
-		
-		for(int i = 0; i < times_pontos.size();i++) {
-			System.out.println(times_pontos.get(i)+ " pontos");
-		}
-		*/
-		System.out.println("\n Classificação: ");
-		
-		clubes.sort(Comparator.comparing(Clube :: getPontos ).reversed());
-		for (Clube clube : clubes) {
-			System.out.printf("\n %s %d pontos \n",clube.nome,clube.pontos);
-			
-		}
-			
-			
-			
-			
 		return "oi";
 	}
 	
-	public String getCampeao() {
-		String vencedor ;
-		ArrayList<Integer> pontuacoes = new ArrayList<Integer>();
-		
+	/*public int getCampeao() {
 		for(int i = 0 ; i < clubes.size();i++) {
-			pontuacoes.add(clubes.get(i).pontos);
-		}
-		
-		Collections.sort(pontuacoes);
-		
-		vencedor = clubes.get(0).nome;
-		
-		return vencedor;
-	}
+			maior = clubes.get(i).getPontos();
+			if(clubes.get(i+1).getPontos() > clubes.get(i).getPontos() ) {
+				maior = clubes.get(i+1).getPontos();
+			}
+		//System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
+	
+	}*/
 	
 }

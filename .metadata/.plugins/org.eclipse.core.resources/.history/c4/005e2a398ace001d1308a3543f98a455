@@ -50,7 +50,7 @@ public class Campeonato {
 		if (pl_time1 == pl_time2) {
 			x.empatar();
 			y.empatar();
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 		
 		else if (pl_time1 > pl_time2) {
@@ -62,7 +62,7 @@ public class Campeonato {
 			saldoy = pl_time2 - pl_time1;
 			y.perder(saldoy);
 			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 		
 		else if (pl_time2 > pl_time1) {
@@ -74,7 +74,7 @@ public class Campeonato {
 			saldoy = pl_time2 - pl_time1;
 			y.ganhar(saldoy);
 			
-			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
+			System.out.printf("\n %s X %s (%d - %d) \n",x.getNome(),y.getNome(),pl_time1,pl_time2);
 		}
 			
 	}
@@ -101,7 +101,7 @@ public class Campeonato {
 		*/
 		System.out.println("\n Classificação: ");
 		
-		clubes.sort(Comparator.comparing(Clube :: getPontos ).reversed());
+		clubes.sort(Comparator.comparing(Clube :: getPontos).reversed());
 		for (Clube clube : clubes) {
 			System.out.printf("\n %s %d pontos \n",clube.nome,clube.pontos);
 			

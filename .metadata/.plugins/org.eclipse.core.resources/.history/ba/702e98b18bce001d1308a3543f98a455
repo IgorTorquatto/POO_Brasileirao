@@ -29,7 +29,5 @@ public class Clube {
 			this.saldoGols = saldoGols;
 		}
 		
-		public int getPontos() {
-			return this.pontos;
-		}
+
 }
