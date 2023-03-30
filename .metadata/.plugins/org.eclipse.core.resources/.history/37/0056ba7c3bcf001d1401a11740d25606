@@ -11,11 +11,9 @@ public class Teste {
 		
 		ArrayList<Clube> clubes = new ArrayList<Clube>();
 		
-		String[] todos_times = {"Palmeiras","Flamengo","Cruzeiro","Internacional","Fluminense","Corinthians","Athletico-PR","Atlético","Fortaleza","São Paulo","América","Botafogo","Santos","Goiás","Red Bull Bragantino","Coritiba","Cuiabá","Grêmio","Vasco","Bahia" };
-		
 		//Criando os clubes:
-		for(int i = 0; i <todos_times.length ; i++) {
-			clubes.add(new Clube(todos_times[i]));
+		for(int i = 0; i <10 ; i++) {
+			clubes.add(new Clube("Clube " + String.valueOf(i+1)));
 		}
 		
 		//Criando o campeonato:

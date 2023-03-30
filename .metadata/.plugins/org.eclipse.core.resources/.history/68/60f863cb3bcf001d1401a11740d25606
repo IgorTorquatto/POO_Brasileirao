@@ -37,7 +37,7 @@ public class Campeonato {
 		}
 		
 		getClassificacao();
-		System.out.println(" \n  \n Parabéns " + getCampeao() + " é o time vencedor!");
+		System.out.println(" \n Parabéns " + getCampeao() + " é o time vencedor!");
 		
 	}
 	
@@ -83,11 +83,34 @@ public class Campeonato {
 	
 	public void getClassificacao() {
 		
+		/* ArrayList<Integer> times_pontos = new ArrayList<Integer>();
+		System.out.println("\n Classificação: ");
 		
+		
+		for(int i = 0 ; i < clubes.size();i++) {
+			
+			System.out.printf("\n %s : %d \n",clubes.get(i).getNome(),clubes.get(i).getPontos());
+		}
+		for(int i = 0; i< clubes.size();i++) {
+			times_pontos.add(clubes.get(i).pontos);
+		}
+		
+		Collections.sort(times_pontos, Collections.reverseOrder());
+		
+		for(int i = 0; i < times_pontos.size();i++) {
+			System.out.println(times_pontos.get(i)+ " pontos");
+		}
+		*/
 		System.out.println("\n  \n Classificação:  \n ");
 		
 		clubes.sort(Comparator.comparing(Clube :: getPontos).reversed());
 		
+		//for (Clube clube : clubes) {
+			
+		
+			//System.out.printf("\n %s %d (Pts) %d (SG) \n",clube.nome,clube.pontos,clube.saldoGols);
+			
+		//}
 			for( int i = 0 ; i < clubes.size() -1 ;i++) {
 				if((clubes.get(i+1).saldoGols > clubes.get(i).saldoGols) && (clubes.get(i+1).pontos == clubes.get(i).pontos)) {
 					Collections.swap(clubes, i, i+1);
