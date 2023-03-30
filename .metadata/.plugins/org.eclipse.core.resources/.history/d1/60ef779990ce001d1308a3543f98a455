@@ -12,7 +12,7 @@ public class Teste {
 		ArrayList<Clube> clubes = new ArrayList<Clube>();
 		
 		//Criando os clubes:
-		for(int i = 0; i <10 ; i++) {
+		for(int i = 0; i <5 ; i++) {
 			clubes.add(new Clube("Clube " + String.valueOf(i+1)));
 		}
 		

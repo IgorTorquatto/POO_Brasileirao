@@ -111,7 +111,7 @@ public class Campeonato {
 			//System.out.printf("\n %s %d (Pts) %d (SG) \n",clube.nome,clube.pontos,clube.saldoGols);
 			
 		//}
-			for( int i = 0 ; i < clubes.size() -1 ;i++) {
+			for( int i = 0 ; i < clubes.size();i++) {
 				if((clubes.get(i+1).saldoGols > clubes.get(i).saldoGols) && (clubes.get(i+1).pontos == clubes.get(i).pontos)) {
 					Collections.swap(clubes, i, i+1);
 				}
