@@ -55,7 +55,7 @@ public class Campeonato {
 			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
 		}
 		
-		else if (pl_time1 > pl_time2) {
+	     if (pl_time1 > pl_time2) {
 			//Para x:
 			saldox = pl_time1 - pl_time2;
 			x.ganhar(saldox);
@@ -67,7 +67,7 @@ public class Campeonato {
 			System.out.printf("\n %s X %s (%d - %d) \n",x.nome,y.nome,pl_time1,pl_time2);
 		}
 		
-		else if (pl_time2 > pl_time1) {
+	     if (pl_time2 > pl_time1) {
 			//Para x:
 			saldox = pl_time1 - pl_time2;
 			x.perder(saldox);
@@ -83,17 +83,21 @@ public class Campeonato {
 	
 	public void getClassificacao() {
 		
+		Clube auxiliar = new Clube("Auxiliar");
 		
 		System.out.println("\n  \n Classificação:  \n ");
 		
 		clubes.sort(Comparator.comparing(Clube :: getPontos).reversed());
 		
-			for( int i = 0 ; i < clubes.size() -1 ;i++) {
-				if((clubes.get(i+1).saldoGols > clubes.get(i).saldoGols) && (clubes.get(i+1).pontos == clubes.get(i).pontos)) {
-					Collections.swap(clubes, i, i+1);
-				}
-				System.out.printf("\n %s %d (Pts) %d (SG) \n",clubes.get(i).nome,clubes.get(i).pontos,clubes.get(i).saldoGols);
+		clubes.add(auxiliar);
+		int posicao_auxiliar = clubes.indexOf(auxiliar); //vai ficar na última posição para que o for funcione.
+		
+		for( int i = 0 ; i != posicao_auxiliar ;i++) {
+			if((clubes.get(i+1).saldoGols > clubes.get(i).saldoGols) && (clubes.get(i+1).pontos == clubes.get(i).pontos)) { //compara por saldo de gols se os pontos forem iguais.
+				Collections.swap(clubes, i, i+1); //troca de posição
 			}
+			System.out.printf("\n %s %d (Pts) %d (SG) \n",clubes.get(i).nome,clubes.get(i).pontos,clubes.get(i).saldoGols);
+		}
 			
 	}
 	
