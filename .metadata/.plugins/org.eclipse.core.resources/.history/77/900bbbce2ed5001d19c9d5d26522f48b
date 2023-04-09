@@ -9,6 +9,7 @@ public class Campeonato {
 	//Atributo:
 	public ArrayList<Clube> clubes = new ArrayList<Clube>();
 	
+	
 	//Random:
 	Random numero_random = new Random();
 	
@@ -82,8 +83,8 @@ public class Campeonato {
 	
 	public void getClassificacao() {
 		
-	    Clube ultimo = new Clube("Último");
-
+		Clube ultimo = new Clube("Último");
+		
 		System.out.println("\n  \n Classificação:  \n ");
 		
 		clubes.sort(Comparator.comparing(Clube :: getPontos).reversed());

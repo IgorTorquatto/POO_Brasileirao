@@ -9,6 +9,7 @@ public class Campeonato {
 	//Atributo:
 	public ArrayList<Clube> clubes = new ArrayList<Clube>();
 	
+	
 	//Random:
 	Random numero_random = new Random();
 	
